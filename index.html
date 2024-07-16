@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador de texto - Alura ONE</title>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Encriptar desencriptar texto</h1>
+    </div>
+
+    <div id="main-container">
+    
+        <div id="box-logo" class="main-boxes">
+            <img src="img/icono-alura.png" alt="logo-alura">
+        </div>
+        
+        <div id="box-interaction" class="main-boxes">
+
+            <div id="box-input" class="box-interaction-format" >
+                <input type="text" class="box-input-format"  placeholder="Ingrese el texto aquí..." pattern="[a-z]" onkeyup="validar(this)"></input>
+            </div>
+            
+            <div id="box-input2" class="box-interaction-format">
+                <div id="note" class="box-input-format">
+                    <img src="img/icono-exclamacion.png" alt="advertencia"><p class="advertencia">Solo letras minúsculas y sin tíldes</p>
+                </div>
+                <div id="box-buttons" class="box-input-format">
+                    <div id="button1" class="box-button-format">
+                        <button id="encriptar"><span>Encriptar</span></button>
+                    </div>
+                    <div id="button2" class="box-button-format">
+                        <button id="desencriptar"><span>Desencriptar</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="box-results" class="main-boxes">
+            <div id="result">
+            </div>
+            <div id="image">
+                <img src="img/munheco.png" alt="muñeco-buscador-de-textos">
+            </div>
+            <div id="text-default1">
+                <p>Ningún mensaje fue encontrado</p>
+            </div>
+            <div id="text-default2">
+                <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="button-copy">
+                <button id="copiar"><span>Copiar</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Challange Alura - Oracle ONE | Realizado por Walter Alvariza</p>
+        <ul>
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/walter-alvariza/" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul> 
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
